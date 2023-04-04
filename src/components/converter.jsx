@@ -16,9 +16,9 @@ export default class Converter extends React.Component {
         } else if(hex.length > 6) {
                        
             if(/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)) {
-                let rgb = `rgb(${(parseInt(hex.replace(/\#/gi,''), 16) >> 16) & 255},
-                ${(parseInt(hex.replace(/\#/gi,''), 16) >> 8) & 255},
-                ${(parseInt(hex.replace(/\#/gi,''), 16)) & 255})`;
+                let rgb = `rgb(${(parseInt(hex.replace(/#/gi,''), 16) >> 16) & 255},
+                ${(parseInt(hex.replace(/#/gi,''), 16) >> 8) & 255},
+                ${(parseInt(hex.replace(/#/gi,''), 16)) & 255})`;
 
                 this.setState({
                     background: hex,
