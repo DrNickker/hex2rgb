@@ -26,8 +26,8 @@ export default class Converter extends React.Component {
                 })
             } else {
                 this.setState({
-                    background: 'red',
-                    convertColor: 'Error'
+                    background: '#EC5F4C',
+                    convertColor: 'Ошибка'
                 })
             }
         }
