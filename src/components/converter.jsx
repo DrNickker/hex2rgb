@@ -40,7 +40,7 @@ export default class Converter extends React.Component {
                     <input type="text" name="text" placeholder="#000000"
                         onChange={this.handleChangeColor} />
                 </div>
-                <div className="block">
+                <div className="block-2">
                     <p>{this.state.convertColor}</p>
                 </div>
             </div>
